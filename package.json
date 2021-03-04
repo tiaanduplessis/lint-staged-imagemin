@@ -9,7 +9,7 @@
         "lint-staged",
         "imagemin"
     ],
-    "license": "mit",
+    "license": "MIT",
     "scripts": {
         "lint": "standard --fix"
     },
