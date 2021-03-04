@@ -3,7 +3,7 @@
     "description": "Easily configure imagemin to work with lint-staged",
     "version": "1.0.0",
     "main": "./index.js",
-    "bin": "bin/cli.js",
+    "bin": "./cli.js",
     "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
     "keywords": [
         "lint-staged",
