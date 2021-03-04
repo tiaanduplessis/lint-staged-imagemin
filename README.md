@@ -77,5 +77,5 @@ Remember to install the imagemin plugins you use. You'll get a warning if their 
 
 ## License
 
-mit 
+MIT 
     
