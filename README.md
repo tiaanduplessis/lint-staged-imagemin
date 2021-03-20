@@ -36,7 +36,7 @@ Configure with [lint-staged](https://github.com/okonet/lint-staged):
 ```json
 {
     "lint-staged": {
-        "*.{png,jpeg,jpg,gif,svg}": ["lint-staged-imagemin", "git add"]
+        "*.{png,jpeg,jpg,gif,svg}": ["lint-staged-imagemin"]
     },
 }
 ```
