@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const merge = require('deepmerge')
 const prettyBytes = require('pretty-bytes')
-const ora = require('ora')
 const { cosmiconfig } = require('cosmiconfig')
 
 const defaultConf = require('./default-conf')
@@ -21,7 +20,6 @@ const findPlugin = (plugin, config) => {
 
 (async () => {
   try {
-    const spinner = ora('Starting').start()
 
     const result = await explorer.search()
     const config = merge(defaultConf, result && result.config ? result.config : {})
@@ -37,12 +35,11 @@ const findPlugin = (plugin, config) => {
     }, [])
 
     await Promise.all(filenames.map(async filename => {
-      spinner.text = `Optimizing ${filename}`
+      console.log(`Optimizing ${filename}`)
       const { saved, originalSize, optimizedSize } = await minFile(filename, plugins)
-      spinner.text = saved > 0 ? `Saved ${prettyBytes(saved)} on ${filename} (${prettyBytes(originalSize)} → ${prettyBytes(optimizedSize)})` : `${filename} is already optimized at ${prettyBytes(originalSize)}`
+      console.log(saved > 0 ? `Saved ${prettyBytes(saved)} on ${filename} (${prettyBytes(originalSize)} → ${prettyBytes(optimizedSize)})` : `${filename} is already optimized at ${prettyBytes(originalSize)}`)
     }))
 
-    spinner.stop()
   } catch (error) {
     console.error(error)
     process.exit(1)
