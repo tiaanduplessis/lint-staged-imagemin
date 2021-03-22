@@ -66,7 +66,9 @@ Your configuration will be merged with the [default configuration](./default-con
 }
 ```
 
-Remember to install the imagemin plugins you use. You'll get a warning if their is configuration, but the plugin is missing.
+**Remember to install the imagemin plugins you use**. You'll get a warning if their is configuration, but the plugin is missing.
+
+If you would like to get more details about the savings, add the `--verbose` flag to `lint-staged`.
 
 ## Contribute
 
