@@ -6,7 +6,7 @@ module.exports = {
     quality: 85
   },
   optipng: {
-    optimizationLevel: 5
+    optimizationLevel: 3
   },
   svgo: {
     plugins: [{ name: 'removeViewBox', active: false }]
