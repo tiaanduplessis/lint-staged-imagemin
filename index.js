@@ -1,5 +1,5 @@
 const path = require('path')
-const { readFile, writeFile } = require('fs/promises')
+const { readFile, writeFile } = require('fs').promises
 
 const imagemin = require('imagemin')
 
