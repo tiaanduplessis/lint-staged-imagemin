@@ -10,6 +10,7 @@
         "imagemin"
     ],
     "license": "MIT",
+    "engines" : { "node" : ">=0.12" },
     "scripts": {
         "lint": "standard --fix"
     },
