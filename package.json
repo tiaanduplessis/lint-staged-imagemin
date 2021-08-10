@@ -5,6 +5,7 @@
     "main": "./index.js",
     "bin": "./cli.js",
     "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
+    "repository": "tiaanduplessis/lint-staged-imagemin",
     "keywords": [
         "lint-staged",
         "imagemin"
