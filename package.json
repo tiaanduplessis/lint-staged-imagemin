@@ -1,7 +1,7 @@
 {
     "name": "lint-staged-imagemin",
     "description": "Easily configure imagemin to work with lint-staged",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "main": "./index.js",
     "bin": "./cli.js",
     "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
@@ -11,7 +11,9 @@
         "imagemin"
     ],
     "license": "MIT",
-    "engines" : { "node" : ">=0.14" },
+    "engines": {
+        "node": ">=0.14"
+    },
     "scripts": {
         "lint": "standard --fix"
     },
