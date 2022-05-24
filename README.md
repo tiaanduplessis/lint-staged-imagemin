@@ -6,18 +6,20 @@
 [![package license](https://img.shields.io/npm/l/lint-staged-imagemin.svg?style=flat-square)](https://npmjs.org/package/lint-staged-imagemin)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-> Easily configure [imagemin](https://github.com/imagemin) to work with [lint-staged](https://github.com/okonet/lint-staged)
+Easily configure [imagemin](https://github.com/imagemin) to work with [lint-staged](https://github.com/okonet/lint-staged)
+
 
 ## Table of Contents
-
-- [Install](#install)
-- [Usage](#usage)
-- [Contribute](#contribute)
-- [License](#License)
+- [lint-staged-imagemin](#lint-staged-imagemin)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Install
 
-This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
+Install the package locally within you project folder with your package manager:
 
 ```sh
 $ npm install -D lint-staged-imagemin
@@ -59,9 +61,7 @@ Your configuration will be merged with the [default configuration](./default-con
 {
     "imagemin": {
         "optipng": null,
-        "pngout": {
-
-        }
+        "pngout": {}
     }
 }
 ```
@@ -70,14 +70,11 @@ Your configuration will be merged with the [default configuration](./default-con
 
 If you would like to get more details about the savings, add the `--verbose` flag to `lint-staged`.
 
-## Contribute
+## Contributing
 
-1. Fork it and create your feature branch: `git checkout -b my-new-feature`
-2. Commit your changes: `git commit -am "Add some feature"`
-3. Push to the branch: `git push origin my-new-feature`
-4. Submit a pull request
+Got an idea for a new feature? Found a bug? Contributions are welcome! Please [open up an issue](https://github.com/tiaanduplessis/lint-staged-imagemin/issues) or [make a pull request](https://makeapullrequest.com/).
 
 ## License
 
-MIT 
+[MIT © Tiaan du Plessis](./LICENSE)
     
