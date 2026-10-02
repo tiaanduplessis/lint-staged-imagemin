@@ -15,6 +15,7 @@
         "node": ">=0.14"
     },
     "scripts": {
+        "test": "node test.js",
         "lint": "standard --fix"
     },
     "dependencies": {
