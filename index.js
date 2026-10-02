@@ -1,8 +1,6 @@
 const path = require('path')
 const { readFile, writeFile } = require('fs').promises
 
-const imagemin = require('imagemin')
-
 const supportedExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.svg']
 
 const getExtension = name => path.extname(name).toLowerCase()
@@ -26,9 +24,10 @@ module.exports = async function minFile (filename, plugins = []) {
   }
 
   const originalFile = await readFile(filename)
+  const { default: imagemin } = await import('imagemin')
 
   const data = await imagemin.buffer(originalFile, { plugins })
 
-  writeFile(filename, data)
+  await writeFile(filename, data)
   return getSavings(originalFile, data)
 }
